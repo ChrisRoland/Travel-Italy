@@ -35,7 +35,7 @@ h2.foot {
 /*Header*/
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav h1 {
@@ -43,9 +43,12 @@ nav h1 {
 }
 
 nav .btn {
+    position: absolute;
     display: flex;
     border: 0.5px solid #505050;
     border-radius: 10px;
+    z-index: 1;
+    left: 80%;
 }
 
 nav .btn a {
@@ -75,6 +78,23 @@ section .container-1 {
     overflow: auto;
 }
 
+.circle {
+    position: absolute;
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+}
+
+.ball {
+    margin: 150px 50px 0;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #AFD9E5;
+}
+
 div .img-1 {
     display: flex;
     align-items: center;
@@ -85,9 +105,11 @@ div .img-1 {
 }
 
 div .image-1 {
+    position: relative;
     width: 1209px;
     height: 543px;
     padding: 25px 55px;
+    z-index: 1;
 }
 
 div .image-2 {
